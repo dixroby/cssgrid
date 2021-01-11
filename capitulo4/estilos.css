@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {/* 
+    padding: 10px; */
+    display: grid;      
+    height:600px;
+    width: 700px;    
+    background-color: #09024b;
+   /*  grid-gap: 10px;    */
+   /* se autocompleta ignorando la posicion inicial */
+    grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+   /*  
+   completa con el tamaño respectivo exacto, puede que esto no llege a tapar todo y sobren espacios, pero se divide en lo especificado las veces necesarias.
+   grid-template-columns: repeat(auto-fit,minmax(10px,1fr)); */
+    /* repite 3 columnas y dependiendo se estira o achica
+    grid-template-columns: repeat(3,minmax(100px,200px));   */
+}
+
+[class^="item"]{
+    color: #fff;  
+    font-size: 30px;
+    text-align: center;
+}
+.item1{
+    max-width: 100%;
+    background-color: #cfa107;
+}
+.item2{
+    background-color: red;
+}
+.item3{
+    background-color: blueviolet;
+}
+.item4{
+    background-color: cadetblue;
+}
